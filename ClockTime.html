@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="output" class="text-light"
+            style="font-size: 150px; font-weight: bold; text-align: center; justify-content: center; background-color: black; color: white;">
+            HH:MM:SS AM
+        </h1>
+    </div>
+</body>
+<script>
+    const getTimeData = () => {
+        const localTime = new Date()
+        console.log(localTime);
+
+        const HOURS = localTime.getHours()
+        const MINUTES = localTime.getMinutes()
+        const SECONDS = localTime.getSeconds()
+
+        output.innerHTML = `${HOURS}:${MINUTES}:${SECONDS} ${HOURS > 11 ? 'PM' : 'AM'}`
+
+        setTimeout(() => {
+            getTimeData()
+        }, 1000);
+
+
+    }
+    getTimeData()
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+<div id="bg" class="w-100" style="height: 100vh;">
+        <h1>DOM</h1>
+        <h1 id="dom">Document Object Model</h1>
+    
+        <h4>This an DOM</h4>
+        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia cumque quibusdam id voluptate tempore excepturi quas sapiente? Voluptas dicta consequuntur ea delectus eaque nemo asperiores, et ipsa illum cumque veniam.</p>
+    
+        <div class="text-center">
+            <button onclick="changeBg()" style="background-color: rgb(143, 204, 230);" class="btn btn-primary">Click here to change background</button>
+        </div>
+</div>
+</body>
+
+<script>
+    const changeBg=()=>{
+        const bgDiv=document.getElementById('bg')
+        // console.log(bgDiv);
+
+        bgDiv.style.backgroundColor="bisque"
+        
+    }
+</script>
+</html>

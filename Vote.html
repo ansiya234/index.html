@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container mt-5 w-100 d-flex align-items-center justify-content-center flex-column" style="text-align: center;"> 
+        <h1>Votting Eligibility</h1>
+      <div class="d-flex align-items-center justify-content-center mt-5">
+            <input id="age" type="text" placeholder="enter note!!" class="form-control">
+            <button onclick="addnote()" type="submit" class="btn btn-success ms-5" style="background-color: greenyellow;">Add</button>
+            <ol id="output">
+
+            </ol>
+            
+      </div>
+  </div>
+  <div style="text-align: center; font-weight: bold;" id="output"></div>
+</body>
+
+<script>
+    const addnote=()=>{
+        // console.log(age.value);
+        if(userinput.value){
+            output.innerHTML+=`<li>${userinput.value}</li>`
+
+        }
+        else{
+            alert("enter a note")
+        }
+
+    }
+</script>
+</html>
